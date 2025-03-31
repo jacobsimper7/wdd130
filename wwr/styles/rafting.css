@@ -28,8 +28,6 @@ main, footer {
 footer {
     background-color:var(--primary-color);
     color: white;
-    display: grid;
-    /* grid-template-columns: 2fr 1fr 1 fr; */
     padding: 2rem;
 }
 
@@ -44,7 +42,6 @@ footer img {
 .hero {
     position: relative;
 }
-
 
 .hero article {
     top: 15rem;
@@ -63,7 +60,6 @@ footer img {
 img {
     padding: 1px;
     margin: 1rem;
-    /* border-width: 5px; */
 }
 
 .hero article img {

@@ -1,0 +1,131 @@
+:root {
+    --text-font: 'roboto', sans-serif;
+    --heading-font: 'limelight', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1, h2, h3, h4, h5, h6, legend{
+    font-family: var(--heading-font);
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: rgb(16, 16, 106);
+    text-align: center;
+}
+
+body {
+    font-family: var(--text-font);
+    font-size: 1.2em;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: thick solid #333;
+    border-radius: 40px;
+    background-color: darkslategrey;
+    color: #fff;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+    border: thick solid rgb(8, 124, 159);
+    border-radius: 5px;
+    padding: 1rem;
+    }
+
+legend {
+    font-family: var(--heading-font);
+    align-items: center;
+    padding: 0.5rem;
+    color: rgb(110, 190, 206);
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: rgb(8, 124, 159);
+    color: #fff;
+    border: thin solid rgb(110, 190, 206);
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  ::placeholder {
+    font-style: italic;
+    color: #fff;
+  }
+
+  footer {
+    font-style: italic;
+    font-size: small;
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+  }
+
+  input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+  }
+
+  button {
+    margin: 1rem;
+    background-color: rgb(8, 124, 159);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+  }
+  
+  button:hover {
+    background-color: rgb(148, 210, 238);
+    color: rgb(11, 11, 98);
+  }
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}

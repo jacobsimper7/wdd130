@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     <title>WDD 130 | HTML Form - User Poll</title>
 </head>
 <body>
@@ -13,24 +17,39 @@
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname"><br>
-                <label for="useremail">Email:</label><br>
-                <input type="email" id="useremail" name="useremail"><br>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                </div>
+                
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label><br>
+                    <input type="email" id="useremail" name="useremail"><br>
+                </div>
+                
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite browser?</label>
-                <select name="browser" id="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">FireFox</option>
-                    <option value="edge">Edge</option>
-                    <option value="other">Other</option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" name="pet" id="pet">
-                <label for="feedback">List the places you have lived:</label>
-                <textarea name="feedback" id="feedback" rows="4" placeholder="Greenville South Carolina, Tooele Utah, Lewiston Idaho"></textarea>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label><br>
+                <select name="browser" id="browser"><br>
+                    <option value="chrome">Chrome</option><br>
+                    <option value="firefox">FireFox</option><br>
+                    <option value="edge">Edge</option><br>
+                    <option value="other">Other</option><br>
+                </select><br>
+                </div>
+                
+                <div class="form-item column1"> 
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet"><br>
+                </div>
+                
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived:</label><br>
+                    <textarea name="feedback" id="feedback" rows="4" placeholder="Greenville South Carolina, Tooele Utah, Lewiston Idaho"></textarea>
+                </div>
+                
             </fieldset>
             <button type="submit">Submit Poll</button>
         </form>
